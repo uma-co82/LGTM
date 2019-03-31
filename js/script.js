@@ -15,7 +15,9 @@ $(function() {
               'src' : "https://lgtmoon.herokuapp.com/images/" + img_num3, 'value' : "![LGTM](https://lgtmoon.herokuapp.com/images/" + img_num3 + ")"
             });
             $('img').on('error', function(){
-                $(this).attr('src', 'https://lgtmoon.herokuapp.com/images/13906');
+                $(this).attr({
+                  'src' : 'https://lgtmoon.herokuapp.com/images/13906', 'value' : "![LGTM](https://lgtmoon.herokuapp.com/images/13906)"
+                });
             });
 
             $('#re-acquisition').click(function() {
