@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+/*-- COMMON --*/
+#popup {
+    min-width: 360px;
+}
+
+/*-- HEAD --*/
+#popup-head {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/*-- BODY --*/
+#popup-body {
+    
+}
+#popup-body .lgtm-list {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+#popup-body .lgtm-list li {
+    display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#popup-body .lgtm-list li img {
+    width: 100%;
+    height: auto;
+}
+
+/*-- FOOT --*/
+#popup-foot {
+    text-align: right;
+}
