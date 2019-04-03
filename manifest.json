@@ -12,17 +12,12 @@
     "default_popup": "html/popup.html"
   },
   "content_scripts": [
-    {
-      "matches": [
-        "http://*/*",
-        "https://*/*"
-      ],
-      "js": ["js/script.js"]
-    }
-  ],
-  "background": {
-    "scripts": [
-      "js/background.js"
-    ]
-  }
+      {
+          "matches": [
+              "https://github.com/*/*/pull/*",
+              "http://*/*"
+          ],
+          "js": ["js/jquery-3.3.1.min.js", "js/contents.js"]
+      }
+  ]
 }
