@@ -15,7 +15,7 @@
       {
           "matches": [
               "https://github.com/*/*/pull/*",
-              "http://*/*"
+              "https://bitbucket.org/*/*/pull-requests/*/*/*"
           ],
           "js": ["js/jquery-3.3.1.min.js", "js/contents.js"]
       }
