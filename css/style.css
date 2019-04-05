@@ -41,8 +41,8 @@
     display: none;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    color: #666666;
+    background-color: #ececec;
+    color: #1dc1d6;
     position:fixed;
     z-index: 2;
     border-radius: 10px;
