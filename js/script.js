@@ -39,5 +39,26 @@ $(function() {
                 function (response) {
                 });
         });
+
+        // modal挿入
+        modalResize();
+        $("#dialog").fadeIn("slow");
+        $(window).resize(modalResize);
+        function modalResize(){
+          var w = $(window).width();
+          var h = $(window).height();
+ 
+          var cw = $("#dialog").outerWidth();
+          var ch = $("#dialog").outerHeight();
+ 
+          $("#dialog").css({
+              "left": ((w - cw)/2) + "px",
+              "top": ((h - ch)/2) + "px"
+          });
+        }
+        function noneModal() {
+          $("#dialog").fadeOut("slow");
+        }
+        window.setTimeout(noneModal(), 2200);
     });
 });

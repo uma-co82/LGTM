@@ -24,6 +24,4 @@ $(function() {
         bodyElm.removeChild(copyFrom);
         return retVal;
       }
-
-
 });
