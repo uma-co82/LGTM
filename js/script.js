@@ -40,17 +40,25 @@ $(function() {
                 });
         });
 
-        // BitBucketの場合
-        // var textarea_element = $('.ProseMirror');
-        // var selected_lgtm_link = $(this).find('img').attr('src');
-        // var build_html = '<div layout="center" contenteditable="false">' +
-        //                  '<div class="media-single center sc-hgRTRy ksNUAd" width="400" height="300">' +
-        //                  '<div class="sc-kIWQTW diyOWi"><div class="sc-eQGPmX kHejiU">' +
-        //                  '<div class="sc-dXLFzO dBzutI sc-isBZXS dPcuUF"><div class="wrapper">' +
-        //                  '<div class="img-wrapper">' +
-        //                  '<div class="media-card  sc-eMRERa vltQz" style="background-image: url("' +
-        //                  selected_lgtm_link + '");">' +
-        //                  '</div></div></div></div></div></div></div><div></div></div>'
-        // textarea_element.append(selected_lgtm_html);
+        // modal挿入
+        modalResize();
+        $("#dialog").fadeIn("slow");
+        $(window).resize(modalResize);
+        function modalResize(){
+          var w = $(window).width();
+          var h = $(window).height();
+ 
+          var cw = $("#dialog").outerWidth();
+          var ch = $("#dialog").outerHeight();
+ 
+          $("#dialog").css({
+              "left": ((w - cw)/2) + "px",
+              "top": ((h - ch)/2) + "px"
+          });
+        }
+        function noneModal() {
+          $("#dialog").fadeOut("slow");
+        }
+        window.setTimeout(noneModal(), 2200);
     });
 });
