@@ -35,8 +35,10 @@ Let's show it! This is LGTM!
 
 ## How It Works in GoogleChrome
 Comment Form
+#### Ex)
 * [GitHub](https://github.com)
 * [BitBucket](https://bitbucket.org)
+* etc.
 
 ## Usage
 
@@ -52,20 +54,15 @@ Add `LGTM` Extension to `GoogleChrome`:
 https://chrome.google.com/webstore/category/extensions ここは拡張機能のURL
 ```
 
-
-
-## Config ←諸々の設定を書く
-
-
-
-
-
 ## Applications
-
+#### Ex)
 * GitHub
 * BitBucket
+* etc.
 
 ```
+* This can be used on any website
+
 1. Go to the URL where you want to paste LGTM
 
 2. I'd like to finish my comment
@@ -80,7 +77,9 @@ https://chrome.google.com/webstore/category/extensions ここは拡張機能のU
 
 7. Once the image is decided, it is easy. Just click
 
-8. Finally it is LGTM if you push the button with all your heart
+8. Then the image is copied to the clipboard 
+
+9. You can then send LGTM by pasting it.
 
 ```
 
