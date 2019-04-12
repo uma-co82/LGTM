@@ -51,7 +51,7 @@ https://www.google.com/chrome/
 Add `LGTM` Extension to `GoogleChrome`:
 
 ```url
-https://chrome.google.com/webstore/category/extensions ここは拡張機能のURL
+https://chrome.google.com/webstore/detail/lgtm/ehkjindamlinbodfpafobgoipdhladjc
 ```
 
 ## Applications
