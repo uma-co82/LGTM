@@ -1,11 +1,11 @@
 $(function() {
 
     //　画像ランダム取得(https://lgtmoon.herokuapp.com/)
-    var min = 2;
-    var max =  17269;
-    var img_num = Math.floor(Math.random() * (max + 1 - min)) + min;
-    var img_num2 = Math.floor(Math.random() * (max + 1 - min)) + min;
-    var img_num3 = Math.floor(Math.random() * (max + 1 - min)) + min;
+    const MIN = 2;
+    const MAX =  20062;
+    var img_num = Math.floor(Math.random() * (MAX + 1 - MIN)) + MIN;
+    var img_num2 = Math.floor(Math.random() * (MAX + 1 - MIN)) + MIN;
+    var img_num3 = Math.floor(Math.random() * (MAX + 1 - MIN)) + MIN;
     $('.img1').attr({
       'src' : "https://lgtmoon.herokuapp.com/images/" + img_num, 'value' : "![LGTM](https://lgtmoon.herokuapp.com/images/" + img_num + ")"
     });
@@ -16,8 +16,9 @@ $(function() {
       'src' : "https://lgtmoon.herokuapp.com/images/" + img_num3, 'value' : "![LGTM](https://lgtmoon.herokuapp.com/images/" + img_num3 + ")"
     });
     $('img').on('error', function(){
+        var any_img = Math.floor(Math.random() * (MAX + 1 - MIN)) + MIN;
         $(this).attr({
-          'src' : 'https://lgtmoon.herokuapp.com/images/13906', 'value' : "![LGTM](https://lgtmoon.herokuapp.com/images/13906)"
+          'src' : 'https://lgtmoon.herokuapp.com/images/' + any_img, 'value' : "![LGTM](https://lgtmoon.herokuapp.com/images/" + any_img + ")"
         });
     });
 
