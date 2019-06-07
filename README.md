@@ -44,15 +44,12 @@ Comment Form
 
 First, install `GoogleChrome`:
 
-```
-https://www.google.com/chrome/
-```
+
+[https://www.google.com/chrome/](https://www.google.com/chrome/)
 
 Add `LGTM` Extension to `GoogleChrome`:
 
-```url
-https://chrome.google.com/webstore/detail/lgtm/ehkjindamlinbodfpafobgoipdhladjc
-```
+[https://chrome.google.com/webstore/detail/lgtm/ehkjindamlinbodfpafobgoipdhladjc](https://chrome.google.com/webstore/detail/lgtm/ehkjindamlinbodfpafobgoipdhladjc)
 
 ## Applications
 #### Ex)
