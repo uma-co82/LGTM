@@ -51,10 +51,10 @@ $(function() {
         function modalResize(){
           var w = $(window).width();
           var h = $(window).height();
- 
+
           var cw = $("#dialog").outerWidth();
           var ch = $("#dialog").outerHeight();
- 
+
           $("#dialog").css({
               "left": ((w - cw)/2) + "px",
               "top": ((h - ch)/2) + "px"

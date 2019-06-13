@@ -10,7 +10,14 @@ $(function() {
         $('#new_comment_field').change(function() {
             var already_text = $('#new_comment_field').val();
         });
-        $('#new_comment_field').val(already_text + "\n" + contents);
+        // 既に記述がある時は改行して挿入,無い場合は改行せずに挿入
+        if (already_text) {
+            $('#new_comment_field').val(already_text + "\n" + contents);
+        } else {
+            $('#new_comment_field').val(contents);
+        }
+        // submitボタンのdisabledを解除
+        $('#partial-new-comment-form-actions > .btn-primary').prop("disabled", false);
         return;
     });
 
@@ -23,5 +30,5 @@ $(function() {
         var retVal = document.execCommand('copy');
         bodyElm.removeChild(copyFrom);
         return retVal;
-      }
+    }
 });
